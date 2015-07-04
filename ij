@@ -32,9 +32,10 @@ else
     elif [ -f pom.xml ]; then
       open -a "$IDEA" "pom.xml"
 
-    elif [ -f build.sbt -o -f project/build.scala ]; then
+    elif [ -f build.sbt ]; then
       open -a "$IDEA" "build.sbt"
-
+    elif [ -f project/build.scala ]; then
+      open -a "$IDEA" "project/"	
     else
       open "$IDEA"
     fi
