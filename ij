@@ -34,7 +34,7 @@ else
 
     elif [ -f build.sbt ]; then
       open -a "$IDEA" "build.sbt"
-    elif [ -f project/build.scala ]; then
+    elif [ -d project/ ]; then
       open -a "$IDEA" "project/"	
     else
       open "$IDEA"
